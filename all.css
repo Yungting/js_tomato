@@ -54,7 +54,7 @@ table {
 .header{
 	width: 95%;
 	height: 40px;
-	margin: 25px 30px;
+	margin: 30px 30px;
 }
 .menu{
 	float: left;
@@ -78,7 +78,7 @@ table {
 	padding-top: 10px;
 	background-color: darkgoldenrod;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 .menu a:hover{
 	font-weight: bold;
@@ -89,7 +89,7 @@ table {
 	padding-top: 10px;
 	float: right;
 	text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 a{
 	color: #000;
@@ -99,15 +99,30 @@ a{
 	width: 95%;
 	background-color: brown;
 	height: 400px;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 .con_left{
 	float: left;
-	line-height:300px;
+	display:table-cell;
 	width: 60%;
 	text-align: center;
 	background: pink;
 	height: 300px;
+}
+.ready{
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	margin-top: 150px;
+	vertical-align: middle;
+	background-color: green;
+}
+.add_todo_list{
+	margin: 0 auto;
+	display: inline-block;
+	margin-top: 110px;
+	vertical-align: middle;
+	background-color: green;
 }
 .con_right{
 	width: 40%;
@@ -117,8 +132,11 @@ a{
 	float: right;
 }
 .asking_word{
-	margin-left: 20%;
+	display: block;
+	margin-top: 10px;
 	float: left;
+	line-height: 1.4;
+	text-align: left;
 	font-size: 25px;
 	font-weight: bold;
 	font-family: '微軟正黑體';
@@ -129,12 +147,10 @@ button{
 }
 .start{
 	margin-left: 20px;
-	margin-top: 130px; 
 	font-size: 20px;
 	font-family: inherit;
 	width: 45px;
 	height: 45px;
-	line-height: 38px;
 	border-radius:50%;
 	background-color: #8fd3f4;
 	float: left;
@@ -148,6 +164,48 @@ button{
 .tomato_img{
 	background-color: chocolate;
 	height: 100%;
+}
+.todo_list_btn_frame{
+	float: left;
+	display: block;
+	width: 78%;
+	margin-top: 15px;
+	height: 38px;
+	border: 1px #000 solid;
+	border-radius: 100px;
+}
+.space{
+	float: right;
+	width: 100px;
+}
+.todo_list_btn_frame p{
+	float: left;
+	margin-left: 20px;
+	line-height: 38px;
+	color: gray;
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+.no_to_add{
+	float: left; 
+	margin-left: 20px; 
+	margin-top: 25px;
+	text-decoration: none;
+	background-color: chocolate;
+	padding-bottom: 6px; 
+	border-bottom: #000 0.5px solid;
+}
+.todo_list_btn{
+	margin-top: 3px;
+	margin-right: 3px; 
+	height: 32px;
+	width: 110px;
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #8fd3f4;
+	border-radius: 70px;
+	color: #FFF;
 }
 .clear{
     clear: both;
