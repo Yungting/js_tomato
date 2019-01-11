@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <title>番茄鬧鐘</title>
 </head>
 <body>
@@ -29,10 +30,10 @@
 
         <div class="content">
             <div class="con_left">
-                <!-- <div class="ready">
+                <div class="ready">
                     <p class="asking_word">你要開始專心了嗎？</p>
-                    <button class="start"></button>
-                </div> -->
+                    <button class="start"><img src="img/arrow_nbk.png"></img></button>
+                </div>
                 
                 <div class="add_todo_list">
                     <p class="asking_word">先新增你的待辦事項吧<br>這樣才能收集茄茄我</p>
@@ -57,5 +58,12 @@
         <div class="footer"></div>
         <div class="clear"></div>
     </div>
+
+    <script>
+        $('.start').click(function(e){
+            $('.ready').hide();
+            $('.add_todo_list').fadeIn(1000);
+        });
+    </script>
 </body>
 </html>
