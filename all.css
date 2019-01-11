@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	width: 95%;
+	height: 40px;
+	margin: 25px 30px;
+}
+.menu{
+	float: left;
+	width: 60%;
+	height: 100%;
+	background: blueviolet;
+}
+.menu_right{
+	float: right;
+	width: 40%;
+	height: 100%;
+	background: red;
+}
+.menu li{
+
+}
+.menu a{
+    float: left;
+	width: 130px;
+	height: 30px;
+	padding-top: 10px;
+	background-color: darkgoldenrod;
+    text-align: center;
+    font-size: 18px;
+}
+.menu a:hover{
+	font-weight: bold;
+	color: #00aaae;
+}
+.menu_right a{
+	height: 30px;
+	padding-top: 10px;
+	float: right;
+	text-align: center;
+    font-size: 18px;
+}
+a{
+	color: #000;
+    text-decoration: none;
+}
+.content{
+	width: 95%;
+	background-color: brown;
+	height: 400px;
+	margin: 0 auto;
+}
+.con_left{
+	float: left;
+	line-height:300px;
+	width: 60%;
+	text-align: center;
+	background: pink;
+	height: 300px;
+}
+.con_right{
+	width: 40%;
+	height: 300px;
+	text-align: center;
+	background: chartreuse;
+	float: right;
+}
+.asking_word{
+	margin-left: 20%;
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: '微軟正黑體';
+}
+button{
+	border: 0px;
+	background-color: transparent;
+}
+.start{
+	margin-left: 20px;
+	margin-top: 130px; 
+	font-size: 20px;
+	font-family: inherit;
+	width: 45px;
+	height: 45px;
+	line-height: 38px;
+	border-radius:50%;
+	background-color: #8fd3f4;
+	float: left;
+}
+.user_img{
+	margin-right: 20px;
+	margin-left: 40px;
+	margin-top: -10px;
+	width: 35px;
+}
+.tomato_img{
+	background-color: chocolate;
+	height: 100%;
+}
+.clear{
+    clear: both;
+}
