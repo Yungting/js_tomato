@@ -12,12 +12,11 @@
 
 <body>
     <div class="wrap">
-        <!-- 以下可以拿掉 -->
         <div class="header">
             <div class="menu">
                 <ul>
                     <li><a href="#">Timer</a></li>
-                    <li><a href="#">Todo List</a></li>
+                    <li><a href="#" class="blue">Todo List</a></li>
                     <li><a href="#">History</a></li>
                 </ul>
             </div>
@@ -29,7 +28,6 @@
             </div>
         </div>
         <div class="clear"></div>
-        <!-- 以上可以拿掉 -->
 
         <div class="content">
             <div class="todolist">
@@ -41,9 +39,22 @@
                 <div class="today_task">
                     <h2>今日任務</h2>
                     <ul class="tasks">
-                        <li class="non_start"><span class="thing_name gray">我要成為海賊王</span><button class="gray">開始</button></button></li><br>
-                        <li class="finish"><span class="thing_name light_gray">我要成為海賊王</span><span class="tomato_num light_gray">已獲得1顆番茄</span></li><br>
-                        <li class="working"><span class="thing_name blue">我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王</span><button class="red">完成</button><button class="blue">繼續</button><span class="tomato_num light_gray">已獲得1顆番茄</span></li><br>
+                        <li class="non_start">
+                            <span class="thing_name gray" id="non_start_thing_name">我要成為海賊王</span>
+                            <button class="gray">開始</button>
+                        </li><br>
+                        
+                        <li class="finish">
+                            <span class="thing_name light_gray" id="finish_thing_name">我要成為海賊王</span>
+                            <span class="tomato_num light_gray" id="finish_tomato_num">已獲得1顆番茄</span>
+                        </li><br>
+                        
+                        <li class="working">
+                            <span class="thing_name blue" id="working_thing_name">我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王我要成為海賊王</span>
+                            <a href="#"><button class="red">完成</button></a>
+                            <a href="./timer.html"><button class="blue">繼續</button></a>
+                            <span class="tomato_num light_gray" id="working_tomato_num">已獲得1顆番茄</span>
+                        </li><br>
                     </ul>
                 </div>             
             </div>

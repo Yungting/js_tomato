@@ -3,6 +3,11 @@
    License: none (public domain)
 */
 
+@font-face {
+	font-family: gill;
+	src: url(./font/GIL_____.TTF) format("opentype");
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -168,7 +173,6 @@ button{
 	width: 35px;
 }
 .tomato_img{
-	background-color: chocolate;
 	height: 100%;
 }
 .todo_list_btn_frame{
@@ -258,7 +262,7 @@ button{
 	width: 80%;
 }
 .tasks li{
-	margin: 20px 0px;
+	margin: 30px 0px;
 	width: 100%;
 }
 .thing_name{
@@ -284,10 +288,10 @@ button{
 	margin-left: 10px;
 }
 .gray{
-	color: gray;
+	color: rgb(90, 90, 90);
 }
 .light_gray{
-	color: #bdbdbd;
+	color: #acacac;
 }
 .red{
 	color: red;
@@ -301,6 +305,102 @@ button{
 .footer{
 	width: 100%;
 	height: 30px;
+}
+.des_to_time{
+	width: 30%;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	height: 500px;
+	background-color: aqua;
+}
+.center_v{
+	font-family: gill;
+	margin-top: 150px;
+	margin-left: 15%;
+	letter-spacing: 1px;
+}
+.center_v p{
+	padding: 10px;
+}
+.clock{
+	width: 40%;
+	float: left;
+	height: 500px;
+	background-color: rgb(30, 255, 0);
+}
+.clock_frame{
+	display: block;
+	margin: 10px auto;
+	border: 0.5px solid;
+	text-align : center;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+}
+.hour{
+	height: 170px;
+	margin: 15px;
+}
+.sec{
+	width: 130px;
+	margin:30px;
+	margin-top: 0px;
+	float: right;
+}
+.tomato_img{
+	text-align : center;
+	margin-top: -130px;
+}
+.tomato_img img{
+	width: 200px;
+	vertical-align : middle;
+}
+.task_right{
+	width: 30%;
+	float: right;
+	height: 500px;
+	background-color: fuchsia;
+}
+.status{
+	padding-top: 60px;
+	background-color: #6b6b6b;
+	padding-left: 50px;	
+}
+.task_name{
+	padding-top: 10px;
+	width: 80%;
+	background-color: #00aaae;
+	font-weight: bold;
+	font-size: 20px;
+	/* 超過3行則顯示刪節 */
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+
+}
+.status a{
+	display: block;
+	padding-top: 10px;
+	font-family: gill;
+	letter-spacing: 1px;
+}
+.status button{
+	width: 150px;
+	border: 1px solid;
+	border-radius: 50px;
+	font-family: gill;
+	letter-spacing: 1px;
+	font-style: italic;
+	font-size: 26px;
+	padding: 8px 0px;
+}
+.recal{
+	font-size: 20px;
+	font-style: italic;
+	padding-left: 25px;
+	margin-top: -10px;
 }
 .clear{
     clear: both;
