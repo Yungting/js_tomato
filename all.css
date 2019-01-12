@@ -71,9 +71,6 @@ table {
 	float: right;
 	width: 40%;
 	height: 100%;
-	background: red;
-}
-.menu li{
 
 }
 .menu a{
@@ -104,6 +101,7 @@ a{
 	width: 95%;
 	height: 400px;
 	margin: 50px auto;
+	background: #b83535;
 }
 .con_left{
 	float: left;
@@ -248,7 +246,7 @@ button{
 }
 .today_task h2{
 	width: 106px;
-	font-family: "微軟正黑體";
+	font-family: gill;
 	text-align: center;
 	padding-bottom: 10px;
 	display: block;
@@ -258,7 +256,7 @@ button{
 	border-bottom: rgb(165, 164, 164) 0.5px solid;
 }
 .tasks{
-	margin-top: 20px;
+	margin: 20px 0px;
 	width: 80%;
 }
 .tasks li{
@@ -304,7 +302,6 @@ button{
 }
 .footer{
 	width: 100%;
-	height: 30px;
 }
 .des_to_time{
 	width: 30%;
@@ -349,8 +346,10 @@ button{
 	float: right;
 }
 .timer_tomato_img img{
+	display: block;
 	width: 200px;
-	vertical-align : middle;
+	margin: 0 auto;
+	margin-top: -130px;
 }
 .task_right{
 	width: 30%;
@@ -398,6 +397,114 @@ button{
 	padding-left: 25px;
 	margin-top: -10px;
 }
+.dialog_finish{
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	font-size: 22px;
+	width: 350px;
+	height: 200px;
+	border: 0px;
+	text-align: center;
+	border-radius: 40px;
+}
+dialog::backdrop {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.dialog_finish span{
+	display: block;
+	margin-top: 80px;
+}
+.dialog_finish_btn{
+	display: block;
+	width: 100%;
+	background-color: chartreuse;
+}
+.ui-dialog-buttonpane{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.blue_frame{
+	margin-top: -17px; 
+	border: 7px solid #bdeaff;
+	border-radius: 50%;
+}
+.member_left{
+	float: left;
+	width: 500px;
+	background-color: blue;
+}
+.member_left img{
+	width: 200px;
+	padding-left: 40%;
+	padding-top: 100px;
+}
+.member_right{
+	float: left;
+	width: 50%;
+	padding-top: 140px;
+	font-size: 30px;
+	position: relative;
+}
+.member_right h2{
+	float: left;
+	padding-right: 5%;
+}
+.user_name{
+	float: left;
+	width: 40%;
+	background-color: #b835b2;
+	/* 超過3行則顯示刪節 */
+	text-overflow: ellipsis;
+	white-space : nowrap;
+	overflow: hidden;
+}
+.member_right p{
+	display: block;
+	margin-top: 90px;
+}
+.goal_num{
+	margin: 20px;
+}
+.edit_img{
+	position: absolute;
+	width: 35px;
+	right: 20%;
+	top: 25%;
+}
+.name_edit{
+	float: left;
+	border: 0.5px solid #acacac;
+	width: 220px;
+	padding: 10px 17px;
+	border-radius: 70px;
+	margin-left: 1%;
+	font-size: 24px;
+	margin-top: -9px;
+	color: #424242;
+	text-align: center;
+}
+.num_edit{
+	width: 35px;
+	margin: 0 10px;
+	height: 30px;
+	font-size: 20px;
+	padding: 2px 5px;
+	text-align: center;
+}
+.save_edit{
+	width: 170px;
+	height: 50px;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #00aaae;
+	border-radius: 15px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+	color: #FFF;
+}
+
 .clear{
-    clear: both;
+	clear: both;
 }
