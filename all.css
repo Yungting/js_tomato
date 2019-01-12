@@ -504,6 +504,37 @@ dialog::backdrop {
 	margin-top: 20px;
 	color: #FFF;
 }
+/* 自製select樣式 */
+.select{
+	margin: 50px;
+	width: 230px;
+	height: 40px;
+	overflow: hidden;
+	background-color: #FFF;	
+}
+
+.select select{
+	border: none;
+	box-shadow: outset 1px 1px 2px #ddd8dc;
+	border: 0.5px solid rgb(73, 73, 73);
+	border-radius: 5px;
+	padding-left: 35px;
+	display: inline-block;
+	width: 230px;
+	height: 100%;
+	font-size: 16px;
+	-webkit-appearance: none;   /* Safari 和 Chrome */
+	-moz-appearance: none;   /* Firefox */
+	background: transparent;
+}
+/* 自製select樣式 */
+.show_history{
+	margin-left: 60px;
+	margin-top: -20px;
+}
+.select_title{
+	font-size: 20px;
+}
 
 .clear{
 	clear: both;
