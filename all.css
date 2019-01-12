@@ -348,11 +348,7 @@ button{
 	margin-top: 0px;
 	float: right;
 }
-.tomato_img{
-	text-align : center;
-	margin-top: -130px;
-}
-.tomato_img img{
+.timer_tomato_img img{
 	width: 200px;
 	vertical-align : middle;
 }
