@@ -71,7 +71,6 @@ table {
 	float: right;
 	width: 40%;
 	height: 100%;
-
 }
 .menu a{
     float: left;
@@ -435,7 +434,6 @@ button{
 }
 .status a{
 	display: block;
-	padding-top: 18px;
 	font-family: gill;
 	letter-spacing: 1px;
 }
@@ -500,7 +498,7 @@ button{
 	-webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   	transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.dialog_finish{
+.dialog{
 	font-family: "微軟正黑體";
 	font-weight: bold;
 	font-size: 22px;
@@ -508,24 +506,50 @@ button{
 	height: 200px;
 	border: 0px;
 	text-align: center;
+	box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.18), 0 1px 5px 0 rgba(0,0,0,0.15);
 	border-radius: 40px;
 }
 dialog::backdrop {
 	background-color: rgba(255, 255, 255, 0.7);
 }
-.dialog_finish span{
+.finish span{
 	display: block;
-	margin-top: 80px;
 }
-.dialog_finish_btn{
+.finish div{
+	margin-top: 50px;
+	margin-left: 130px;
+	height: 50px;
+}
+.finish_btn{
 	display: block;
-	width: 100%;
+	width: 50px;
+	border-radius: 50%;
 	background-color: chartreuse;
 }
-.ui-dialog-buttonpane{
+.finish img{
+	margin-left: -1px;
+}
+.stop{
+	width: 350px;
+	height: 220px;
+}
+.stop span{
 	display: block;
-	width: 100%;
-	margin: 0 auto;
+	margin-top: 25px;
+}
+.stop_ok{
+	margin-top: 30px;
+}
+.close{
+	float: right;
+	margin-right: 15px;
+}
+.stop_ok button{
+	width: 120px;
+	height: 40px;
+	border-radius: 40px;
+	font-size: 20px;
+	border: 0.5px solid;
 }
 .blue_frame{
 	margin-top: -17px; 
@@ -773,6 +797,162 @@ dialog::backdrop {
 .red_hover:hover{
 	border-color: #d3522b;
 	background-color: #d3522b;
+}
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+	}
+
+.reveal-modal {
+	visibility: hidden;
+	top: 100px; 
+	left: 3%;
+	margin-left: -300px;
+	width: 400px;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 60px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	}
+
+	.reveal-modal{
+		text-align: center;
+	}
+	.reveal-modal h1{
+		font-size: 30px;
+		color: #444444;
+	}
+	.reveal-modal .dialog_p{
+		font-size: 24px;
+		margin-top: 40px;
+		color: #444444;
+	}
+	.reveal-modal .dialog_input{
+		padding-left: 14px;
+		padding-top: 7px; 
+		padding-bottom: 7px; 
+		font-size: 18px;
+		border-radius: 100px;
+		margin-left: 30px;
+		border: 2px solid #BFBFBF;
+	}
+
+	.reveal-modal .dialog_des{
+		font-size: 30px;
+		color: #444444;
+		margin-top: 30px;
+	}
+
+
+	
+.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+
+.reveal-modal .close-reveal-modal {
+	font-size: 50px;
+	line-height: .5;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	color: #00aaae;
+} 
+	
+.dialog_btn_g {
+	font-size: 26px;
+	margin-top: 70px;
+	  padding: 2px;
+	  border-color: transparent;
+	  background: #00aaae;
+	  color: #FFFFFF;
+	  -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	border-radius: 28px;
+	padding-left: 40px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	padding-bottom: 10px; 
+}
+.dialog_btn_o {
+	font-size: 26px;
+	margin-top: 70px;
+	  padding: 2px;
+	  border-color: transparent;
+	  background: #ffd45f;
+	  color: #FFFFFF;
+	  -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	border-radius: 28px;
+	padding-left: 40px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	padding-bottom: 10px; 
+}
+.dialog_btn_w {
+	font-size: 26px;
+	margin-top: 70px;
+	border-color: transparent;
+	background: transparent;
+	border: 2px solid #D8D5D5;
+	color: #BFBFBF;
+	-webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	border-radius: 28px;
+	padding-left: 40px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	padding-bottom: 10px; 
+}
+
+.dialog_des_btn_g {
+	font-size: 26px;
+	margin-top: 20px;
+	  padding: 2px;
+	  border-color: transparent;
+	background: #FFFFFF;
+	border: 2px solid #00aaae;
+	  color: #00aaae;
+	  -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	border-radius: 28px;
+	padding-left: 40px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	padding-bottom: 10px; 
+}
+
+.dialog_des_btn_w {
+	font-size: 26px;
+	margin-top: 20px;
+	border-color: transparent;
+	background: transparent;
+	border: 2px solid #D8D5D5;
+	color: #BFBFBF;
+	-webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	border-radius: 28px;
+	padding-left: 40px;
+	padding-top: 10px; 
+	padding-right: 40px; 
+	padding-bottom: 10px; 
 }
 
 .clear{

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="reveal.css">
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="./js/reveal.js"></script>
     <title>番茄鬧鐘</title>
 </head>
 
@@ -23,9 +26,9 @@
 
             <div class="menu_right">
                 <ul>
-                    <li><a class="login">登入</a></li>
+                    <li><a href="#" class="big-link login" data-reveal-id="login">登入</a></li>
                 </ul>
-                
+
             </div>
         </div>
         <div class="clear"></div>
@@ -47,30 +50,49 @@
                 </div>
                 <div class="timer_tomato_img">
                     <img src="./img/tomato_work.png" class="tomato_work">
-                    <!-- <img src="./img/tomato_layzy.png" class="tomato_lazy"> -->
                 </div>
             </div>
 
             <div class="task_right">
                 <div class="status">
-                    <button class="start_btn yellow" style="margin-top:130px">START</button><br>
+                        <a href="#" class="big-link login" data-reveal-id="not_login"><button class="start_btn yellow" style="margin-top:130px">START</button></a><br>
                 </div>
             </div>
         </div>
         <div class="clear"></div>
 
-        <dialog class="dialog_finish">
-            <span>恭喜完成一項任務</span>
-            <button class="start dialog_finish_btn"></button>
-        </dialog>
+        <div id="login" class="reveal-modal">
+            <h1 style="margin-bottom:20px;">登入</h1>
+            <p class="dialog_p">暱稱 <input class="dialog_input" type="text" width="350px" size="24"></p>
+            <p class="dialog_p">密碼 <input class="dialog_input" type="password" width="350px" size="24"></p>
+            <a href="#" class="big-link login" data-reveal-id="enroll"><button style="margin-right:20px;" class="dialog_btn_w"
+                    value="enroll">註冊</button></a>
+            <button class="dialog_btn_g" value="login" onclick="window.location='./after_login.html'">確定</button>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
 
-        <!-- <dialog class="dialog_stop">
-                <span>恭喜完成一項任務</span>
-                
-            </dialog> -->
+        <div id="enroll" class="reveal-modal">
+            <h1>註冊</h1>
+            <p class="dialog_p">暱稱 <input class="dialog_input" type="text" width="350px" size="24"></p>
+            <p class="dialog_p">密碼 <input class="dialog_input" type="password" width="350px" size="24"></p>
+            <button class="dialog_btn_w" value="enroll">登入</button>
+            <button class="dialog_btn_o" value="enter">確定</button>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+
+        <div id="not_login" class="reveal-modal">
+			<p class="dialog_des">你確定要在</p>
+			<p class="dialog_des">未登入的情況下開始？</p>
+			<p class="dialog_des" style="margin-bottom:10px">（如此並不會累計蕃茄喔）</p>
+            <button class="dialog_des_btn_g" value="enroll">登入</button>
+            <button class="dialog_des_btn_w" value="login">確定</button>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
         <div class="footer"></div>
         <div class="clear"></div>
     </div>
+
 </body>
 
 </html>

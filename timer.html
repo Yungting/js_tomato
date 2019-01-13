@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="reveal.css">
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="./js/reveal.js"></script>
     <title>番茄鬧鐘</title>
 </head>
 
@@ -54,23 +57,29 @@
             <div class="task_right">
                 <div class="status">
                     <span class="task_name">任務：陪皮皮玩</span><br>
-                    <button class="status_finish_btn">FINISH</button><br>
-                    <button class="status_stop_btn">STOP</button><br>
-                    <a href="#" class="recal light_gray">recalculate</a><br>
+                    <a href="#" class="big-link" data-reveal-id="status_finish"><button class="status_finish_btn">FINISH</button></a><br>
+                    <a href="#" class="big-link" data-reveal-id="status_stop"><button class="status_stop_btn">STOP</button></a><br>
+                    <a href="#" class="recal light_gray" style="padding-top: 18px;">recalculate</a><br>
                 </div>
             </div>
         </div>
         <div class="clear"></div>
 
-        <dialog class="dialog_finish">
-            <span>恭喜完成一項任務</span>
-            <button class="start dialog_finish_btn"></button>
-        </dialog>
+        <div id="status_stop" class="reveal-modal">
+            <p class="dialog_des">你確定要停止</p>
+            <p class="dialog_des">如此這次的倒數，</p>
+            <p class="dialog_des">不會累計蕃茄喔</p>
+            <button class="dialog_des_btn_w" value="login" style="margin-top:40px">確定</button>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
 
-        <!-- <dialog class="dialog_stop">
-                <span>恭喜完成一項任務</span>
-                
-            </dialog> -->
+        <div id="status_finish" class="reveal-modal">
+            <p class="dialog_des" style="margin-top:100px">恭喜你完成一項任務</p>
+            <button type="button" style="background: transparent; border: none; margin-top: 15px"><img src="img/arrow.png"
+                    style="transform: rotate(90deg); width: 60px; margin-top: 50px;"></button>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+
         <div class="footer"></div>
         <div class="clear"></div>
     </div>
