@@ -321,7 +321,7 @@ button{
 	padding: 10px;
 }
 .clock{
-	width: 40%;
+	width: 460px;
 	float: left;
 	height: 500px;
 	background-color: rgb(30, 255, 0);
@@ -336,8 +336,12 @@ button{
 	border-radius: 50%;
 }
 .hour{
-	height: 170px;
+	/* height: 170px; */
+	width: 45px;
 	margin: 15px;
+}
+.break{
+	margin-top: 108px;
 }
 .sec{
 	width: 130px;
@@ -345,15 +349,27 @@ button{
 	margin-top: 0px;
 	float: right;
 }
+.timer_tomato_img{
+	position: relative;
+	font-weight: bolder;
+	margin-top: -130px;
+}
 .timer_tomato_img img{
 	display: block;
 	width: 200px;
 	margin: 0 auto;
-	margin-top: -130px;
+}
+.break_word{
+	top: 110px;
+	left: -30px;
+	position: absolute;
+	letter-spacing: 1px;
+	font-family: gill;
+	font-size: 30px;
 }
 .task_right{
 	width: 30%;
-	float: right;
+	float: left;
 	height: 500px;
 	background-color: fuchsia;
 }
@@ -373,11 +389,15 @@ button{
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 	overflow: hidden;
-
+}
+.current_num{
+	display: block;
+	margin-top: 4px;
+	font-size: 14px;
 }
 .status a{
 	display: block;
-	padding-top: 10px;
+	padding-top: 18px;
 	font-family: gill;
 	letter-spacing: 1px;
 }
@@ -565,6 +585,8 @@ dialog::backdrop {
 }
 .yellow{
 	background-color: #ffd45e;
+	border-color: #ffd45e;
+	color: #ffd45e;
 }
 .dark_blue{
 	background-color: #00aaae;
@@ -613,6 +635,13 @@ dialog::backdrop {
 .total span{
 	padding-right: 15px;
 	padding-left: 25px;
+}
+.purple{
+	color: #6672E2;
+}
+.start_btn{
+	margin-top: 120px;
+	background-color: transparent;
 }
 
 .clear{
