@@ -65,7 +65,6 @@ table {
 	float: left;
 	width: 60%;
 	height: 100%;
-	background: blueviolet;
 }
 .menu_right{
 	float: right;
@@ -77,7 +76,6 @@ table {
 	width: 130px;
 	height: 30px;
 	padding-top: 10px;
-	background-color: darkgoldenrod;
     text-align: center;
     font-size: 20px;
 }
@@ -100,14 +98,12 @@ a{
 	width: 95%;
 	height: 400px;
 	margin: 50px auto;
-	background: #b83535;
 }
 .con_left{
 	float: left;
 	display:table-cell;
 	width: 60%;
 	text-align: center;
-	background: pink;
 	height: 300px;
 }
 .ready{
@@ -116,7 +112,6 @@ a{
 	display: inline-block;
 	margin-top: 150px;
 	vertical-align: middle;
-	background-color: green;
 }
 .add_todo_list{
 	width: 400px;
@@ -124,13 +119,11 @@ a{
 	display: none;
 	margin-top: 110px;
 	vertical-align: middle;
-	background-color: green;
 }
 .con_right{
 	width: 40%;
 	height: 300px;
 	text-align: center;
-	background: chartreuse;
 	float: right;
 }
 .asking_word{
@@ -209,7 +202,6 @@ button{
 	margin-left: 20px; 
 	margin-top: 25px;
 	text-decoration: none;
-	background-color: chocolate;
 	padding-bottom: 6px; 
 	border-bottom: #000 0.5px solid;
 }
@@ -345,7 +337,6 @@ button{
 	font-size: 30px;
 	font-weight: bold;
 	height: 500px;
-	background-color: aqua;
 }
 .center_v{
 	font-family: gill;
@@ -360,7 +351,6 @@ button{
 	width: 460px;
 	float: left;
 	height: 500px;
-	background-color: rgb(30, 255, 0);
 }
 .clock_frame{
 	display: block;
@@ -407,18 +397,15 @@ button{
 	width: 30%;
 	float: left;
 	height: 500px;
-	background-color: fuchsia;
 }
 .status{
 	height: 80%;
 	padding-top: 60px;
-	background-color: #6b6b6b;
 	padding-left: 50px;	
 }
 .task_name{
 	padding-top: 10px;
 	width: 80%;
-	background-color: #00aaae;
 	font-weight: bold;
 	font-size: 20px;
 	/* 超過3行則顯示刪節 */
@@ -524,7 +511,6 @@ dialog::backdrop {
 	display: block;
 	width: 50px;
 	border-radius: 50%;
-	background-color: chartreuse;
 }
 .finish img{
 	margin-left: -1px;
@@ -559,7 +545,6 @@ dialog::backdrop {
 .member_left{
 	float: left;
 	width: 500px;
-	background-color: blue;
 }
 .member_left img{
 	width: 200px;
@@ -580,7 +565,6 @@ dialog::backdrop {
 .user_name{
 	float: left;
 	width: 40%;
-	background-color: #b835b2;
 	/* 超過3行則顯示刪節 */
 	text-overflow: ellipsis;
 	white-space : nowrap;
@@ -601,7 +585,8 @@ dialog::backdrop {
 }
 .name_edit{
 	float: left;
-	border: 0.5px solid #acacac;
+	border: 0.5px solid #eeeeee;
+	box-shadow: 3px 3px 7px 0.5px rgba(148, 148, 148, 0.3);
 	width: 220px;
 	padding: 10px 17px;
 	border-radius: 70px;
@@ -682,10 +667,9 @@ dialog::backdrop {
 .one_data{
 	float: left;
 	width: 22%;
-	background-color: antiquewhite;
+	box-shadow: 0px 0px 25px 1px rgba(143, 143, 143, 0.3);
 	margin-right: 6%;
 	margin-bottom: 7%;
-	border: 1px solid #acacac;
 	color: #000;
 	border-radius: 30px;
 	padding: 23px;
@@ -727,7 +711,6 @@ dialog::backdrop {
 }
 .data_name{
 	float: left;
-	background-color: #b83535;
 	max-width: 80%;
 	width: 70%;
 	text-overflow: ellipsis;
@@ -738,11 +721,9 @@ dialog::backdrop {
 	width: 40px;
 	float: right;
 	text-align: center;
-	background-color: #ffd45e;
 }
 .list{
 	width: 100%;
-	background-color: darkblue;
 }
 .list li{
 	margin-top: 15px;
